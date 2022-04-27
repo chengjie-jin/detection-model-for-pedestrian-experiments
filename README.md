@@ -11,7 +11,13 @@ This model is based on the model of [Keras-yolov3](https://github.com/qqwweee/ke
 Since the trained file is too large (235M), we cannot upload it to Github. Now you can download it via this link:
 https://pan.baidu.com/s/179-sSklF45q5O9kGuWz_Ug
 
-And then, put it into the folder of /logs/000. 
+and then, put it into the folder of `/logs/000`.
+
+## Install requirements
+
+```
+pip install -r requirements
+```
 
 ## Quick Start
 
@@ -46,17 +52,22 @@ Nevertheless, such situation could be produced if you delete “#” in lines 16
 
 4. The current model could only detect the red and blue caps, since the two colors are frequently used in pedestrian flow experiments. If you want to detect the pedestrians with caps of other colors, just train the Yolo v3 model by yourself. 
 
-PS: if you can read Chinese, the following links may be very helpful for you to train the model! <br>
-https://blog.csdn.net/u012746060/article/details/81183006 <br>
-https://blog.csdn.net/weixin_45488478/article/details/98397947 <br>
+PS: if you can read Chinese, the following links may be very helpful for you to train the model!
+
+- https://blog.csdn.net/u012746060/article/details/81183006 <br>
+- https://blog.csdn.net/weixin_45488478/article/details/98397947
 
 5. The current model only detects the positions of pedestrians. In the future, we will try to track their trajectories, and make this model more useful.
 
-PS: We have published some papers about the pedestrian flow experiments recorded by UAV, and I think they are very interesting and useful. You can read them if you have interests: <br>
+
+## Literature 
+We have published some papers about the pedestrian flow experiments recorded by UAV, and I think they are very interesting and useful. You can read them if you have interests:
 
 Jin et al., 2018. Microscopic events under high-density condition in uni-directional pedestrian flow experiment <br>
 https://www.sciencedirect.com/science/article/pii/S0378437118304667 <br>
 Jin et al., 2019. Single-file pedestrian flow experiments under high-density conditions <br>
 https://www.sciencedirect.com/science/article/pii/S0378437119309744
+
+## Outlook
 
 In the future, more papers will be presented, especially the paper about this model.

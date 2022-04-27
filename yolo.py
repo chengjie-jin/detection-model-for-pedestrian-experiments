@@ -16,8 +16,13 @@ from PIL import Image, ImageFont, ImageDraw
 from yolo3.model import yolo_eval, yolo_body, tiny_yolo_body
 from yolo3.utils import letterbox_image
 import os
-from keras.utils import multi_gpu_model
+
+from tensorflow.python.keras.utils.multi_gpu_utils import multi_gpu_model
 import csv
+
+import tensorflow as tf
+print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
+
 
 class YOLO(object):
     _defaults = {
